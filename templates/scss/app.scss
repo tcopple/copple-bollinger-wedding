@@ -1,0 +1,14 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'mixins';
+
+body {
+  margin: 0;
+  background: $beige;
+}
+@import 'globals';
+@import 'navigation';
+@import 'header';
+@import 'footer';
+
