@@ -1,0 +1,50 @@
+@import url('fonts.css');
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font: normal normal 13px / 1.2 Courier, serif;
+  color: #666C70;
+  position: relative;
+  background-image: url(assets/images/bg.png);
+  background-position: 0 135px, 0 0;
+  background-repeat: repeat-x, repeat;
+  background-color: #fff;
+  min-width: 940px;
+}
+
+ol, ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+blockquote {
+  quotes: none;
+  margin: 0;
+  padding: 10px 0 0 60px;
+  font-style: italic;
+  font-family: Georgia, serif;
+  position: relative;
+  &:after {
+    content: '';
+    content: none;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 12px;
+    background: url(quote.gif) no-repeat;
+    width: 53px;
+    height: 49px;
+  }
+}

@@ -3,12 +3,9 @@
 @import 'variables';
 @import 'mixins';
 
-body {
-  margin: 0;
-  background: $beige;
-}
 @import 'globals';
+@import 'tables';
 @import 'navigation';
 @import 'header';
 @import 'footer';
-
+@import 'content';

@@ -1,0 +1,33 @@
+header {
+  @include fill-parent;
+  @import 'navigation';
+
+  background: url(header-bg.png) repeat-x;
+  height: 154px;
+  margin: 0 0 40px;
+  z-index: 2;
+  position: relative;
+
+  .masthead {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+
+    .branding {
+      position: absolute;
+      top: 10px;
+      left: 50%;
+      margin-left: -75px;
+    }
+
+    .site-name {
+      position: absolute;
+      top: 95px;
+      left: 55px;
+      width: 320px;
+      height: 15px;
+      background: url(sprite.png) -310px -47px no-repeat;
+      text-indent: -9999px;
+    }
+  }
+}

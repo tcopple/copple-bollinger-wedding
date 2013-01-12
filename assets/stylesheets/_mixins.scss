@@ -2,6 +2,6 @@
   -moz-box-shadow: $vertical $horizontal $radius $color;
   -webkit-box-shadow: $vertical $horizontal $radius $color;
   box-shadow: $vertical $horizontal $radius $color;
-  // -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
-  // filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');
 }
