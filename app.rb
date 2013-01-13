@@ -35,6 +35,8 @@ class AppHandler < Sinatra::Base
     css :header, ["/assets/css/header.css"]
     css :footer, ["/assets/css/footer.css"]
     css :content, ["/assets/css/content.css"]
+
+    js :slider, ["/assets/js/slider.js"]
   }
 
   get "/content/*" do

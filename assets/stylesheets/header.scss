@@ -5,7 +5,6 @@
 
 header {
   @include fill-parent;
-  @import 'navigation';
 
   background: url(../../assets/images/header-bg.png) repeat-x;
   height: 154px;
