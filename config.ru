@@ -1,3 +1,5 @@
-require "./app"
+path = ::File.dirname(__FILE__)
+puts path
+require ::File.join(path, "app")
 
-AppHandler.run!
+run AppHandler

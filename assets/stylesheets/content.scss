@@ -1,0 +1,15 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'mixins';
+
+content {
+
+  #banner {
+    width: 932px;
+    height: 378px;
+    background: url(../../images/banner.png) top center no-repeat;
+    margin: 0 auto;
+    padding: 0;
+  }
+}

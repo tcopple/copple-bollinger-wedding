@@ -1,8 +1,13 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'mixins';
+
 header {
   @include fill-parent;
   @import 'navigation';
 
-  background: url(header-bg.png) repeat-x;
+  background: url(../../assets/images/header-bg.png) repeat-x;
   height: 154px;
   margin: 0 0 40px;
   z-index: 2;

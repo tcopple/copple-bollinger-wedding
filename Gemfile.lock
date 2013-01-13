@@ -16,6 +16,8 @@ GEM
     rack-test (0.6.2)
       rack (>= 1.0)
     sass (3.2.1)
+    shotgun (0.9)
+      rack (>= 1.0)
     sinatra (1.3.3)
       rack (~> 1.3, >= 1.3.6)
       rack-protection (~> 1.2)
@@ -39,6 +41,7 @@ DEPENDENCIES
   haml
   neat
   sass
+  shotgun
   sinatra
   sinatra-assetpack
   thin

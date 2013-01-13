@@ -1,0 +1,9 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'mixins';
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

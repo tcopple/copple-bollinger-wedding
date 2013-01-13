@@ -1,14 +1,20 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+@import 'variables';
+@import 'mixins';
+
 footer {
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   clear: both;
-  background: url(images/footer_bg.png) repeat-x;
-  height: 110px;
+  background: url(../../images/footer-bg.png) repeat-x;
+  margin: 20px 0 0 0;
 
   padding: $boundary-padding;
 
   @include row;
   @include fill-parent;
-  @include shadow(0px, -3px, 30px, darken($beige, 60%));
+  // @include shadow(0px, -3px, 30px, darken($beige, 60%));
 
   .mission {
     @include span-columns(6 of 12);
