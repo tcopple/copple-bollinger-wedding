@@ -1,7 +1,7 @@
 !!! 5
 %html
   %head
-    %title Some fancy title here.
+    %title To Be Married May 12th, 2013
     = css(:globals, media: 'screen')
     = css(:navigation, media: 'screen')
     = css(:content, media: 'screen')
@@ -11,13 +11,19 @@
     %script
       window.jQuery || document.write('<script src="assets/js/jquery-1.8.2.min.js"><\/script>')
     = js(:slider)
+    %link(href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css')
 
   %body
     .container
       %header
         .masthead
           .branding
-          .sitename
+            %a{ href: "/" }
+              %img{ src: "/assets/images/logo.png" }
+          .site-name
+            TYLER COPPLE & MADISON BOLLINGER
+          .site-description
+            CELEBRATING PEOPLE, JESUS & FUN SINCE 2009
       %content
         #banner
         #info.hide
@@ -27,11 +33,11 @@
       %navigation
         #navigation-wrapper
           %ul
-            %li.story
+            %li.info
               %a{ }
             %li.registry.terminating
-              %a{ href: :'http://myregistry360.com/wishlist/copple', target: "_blank"}
-            %li.info
+              %a{ href: :"http://giftregistry360.com/wishlist/copple", target: "_blank"}
+            %li.photos
               %a{ }
       %footer
         -# .mission celebrating Christ, people, and fun since 2009

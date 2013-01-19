@@ -5,20 +5,29 @@
 
 header {
   @include fill-parent;
+  @include row;
 
   background: url(../../assets/images/header-bg.png) repeat-x;
   height: 154px;
   margin: 0 0 40px;
   z-index: 2;
   position: relative;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
 
   .masthead {
+    @include row;
     width: 940px;
     margin: 0 auto;
     position: relative;
 
     .branding {
       position: absolute;
+      img {
+        height: 166px;
+        width: 151px;
+      }
       top: 10px;
       left: 50%;
       margin-left: -75px;
@@ -26,12 +35,17 @@ header {
 
     .site-name {
       position: absolute;
-      top: 95px;
-      left: 55px;
-      width: 320px;
+      top: 90px;
+      left: 50px;
       height: 15px;
-      background: url(sprite.png) -310px -47px no-repeat;
-      text-indent: -9999px;
+    }
+
+    .site-description {
+      position: absolute;
+      top: 90px;
+      left: 560px;
+      height: 15px;
+      width: 100%;
     }
   }
 }
