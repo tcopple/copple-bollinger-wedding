@@ -14,7 +14,7 @@ navigation {
   #navigation-wrapper {
     ul {
       @include fill-parent;
-      @include shift(2);
+      margin: 0 auto;
       list-style-type: none;
     }
 
