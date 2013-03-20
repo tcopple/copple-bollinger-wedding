@@ -19,6 +19,7 @@ html, body {
   background-image: url(../../assets/images/yellow.jpg);
   min-width: 940px;
   height: 100%;
+  color: #fff;
 }
 
 .container {
@@ -32,6 +33,10 @@ ol, ul {
   margin: 0;
 }
 
+p {
+  margin: 1em 0px;
+}
+
 blockquote {
   quotes: none;
   margin: 0;
@@ -39,10 +44,12 @@ blockquote {
   font-style: italic;
   font-family: Georgia, serif;
   position: relative;
+
   &:after {
     content: '';
     content: none;
   }
+
   &:before {
     content: '';
     position: absolute;
@@ -54,4 +61,5 @@ blockquote {
   }
 }
 
-.hide { visibility: hidden }
+.hide { display: none; }
+.clear { @include clearfix; }

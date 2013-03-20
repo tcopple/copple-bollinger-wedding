@@ -7,6 +7,7 @@ require 'thin'
 require 'sass'
 require 'haml'
 require 'neat'
+require 'rdiscount'
 
 before do
   content_type :html, 'charset' => 'utf-8'

@@ -4,12 +4,31 @@
 @import 'mixins';
 
 content {
+  @include span-columns(8 of 12);
+  @include shift(2);
+  position: relative;
 
   #banner {
     width: 932px;
     height: 378px;
-    background: url(../../images/banner.png) top center no-repeat;
     margin: 0 auto;
     padding: 0;
+  }
+
+  #info {
+    position: relative;
+    float: left;
+    color: #62686c;
+    margin-bottom: 3%;
+
+    a {
+      color: #62686c;
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+
+    p {
+      padding-left: 2em;
+    }
   }
 }

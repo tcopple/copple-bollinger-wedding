@@ -9,7 +9,7 @@
     = css(:footer, media: 'screen')
     %script(src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js")
     %script
-      window.jQuery || document.write('<script src="assets/js/jquery-1.8.2.min.js"><\/script>')
+      window.jQuery || document.write('<script src="/assets/js/jquery-1.8.2.min.js"><\/script>')
     = js(:slider)
     %link(href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css')
 
@@ -24,12 +24,24 @@
             TYLER COPPLE & MADISON BOLLINGER
           .site-description
             CELEBRATING PEOPLE, JESUS & FUN SINCE 2009
+      .clear
       %content
         #banner
+          %img{ src: "../../images/banner.png" }
         #info.hide
-          something
-        #story.hide
-          else
+          :markdown
+            ###Ceremony Information
+            Join us on May 12, 2013 at [The Webb Barn](http://www.webb-deane-stevens.org/directions.html). The ceremony begins at 4pm, lawn games, food trucks, and dancing will follow. Please not this event is limited to **adults only** unless arrangements are made with Tyler or Madison.
+
+            ###Travel Arrangements
+            *It will be easiest for most people to fly into [Bradley International Airport (BDL)](http://www.bradleyairport.com/home/) in Hartford, Connecticut but [John F. Kennedy](http://www.panynj.gov/airports/jfk.html), [Westchester](http://airport.westchestergov.com/), and [LaGuardia](http://www.panynj.gov/airports/laguardia.html) are also options.*
+
+            *The venue is about 15 minutes south of Hartford, and 25-30 minutes north of New Haven. It is likely (though not confirmed) that the rehearsal dinner will be nearer New Haven than Hartford. Since, we [Tyler & Madison] live in New Haven most of the pre-wedding time will be spent there as opposed to the venue or Hartford.*
+
+            *We have reserved a block of rooms at the [Sheraton in Meridan](http://www.starwoodhotels.com/fourpoints/property/overview/index.html?propertyID=1504) for the weekend, just inform them that you're with the Copple/Bollinger wedding when you make the reservation.*
+
+            *If you'd like a little bit more of an eclectic stay there are many great b&b's in the area and [VRBO](http://www.vrbo.com) generally has some nice rentals on the costal areas. If you need help finding a group of people to stay with, do not hesitate to ask.*
+      .clear
       %navigation
         #navigation-wrapper
           %ul
@@ -39,8 +51,19 @@
               %a{ href: :"http://giftregistry360.com/wishlist/copple", target: "_blank"}
             %li.photos
               %a{ }
+      .clear
       %footer
         -# .mission celebrating Christ, people, and fun since 2009
         -# .author
         -#   our wedding website was made by
         -#   %a{ href: "http://www.tcopp.com" } hand
+    %script
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-37787987-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
